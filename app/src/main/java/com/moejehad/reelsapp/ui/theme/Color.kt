@@ -1,8 +1,11 @@
 package com.moejehad.reelsapp.ui.theme
 
+import android.graphics.Color.parseColor
 import androidx.compose.ui.graphics.Color
 
-val Purple200 = Color(0xFFBB86FC)
-val Purple500 = Color(0xFF6200EE)
-val Purple700 = Color(0xFF3700B3)
-val Teal200 = Color(0xFF03DAC5)
+val primaryColor = Color(parseColor("#E74C3C"))
+val lightPrimaryColor = Color(parseColor("#FBDEDC"))
+val whiteColor = Color(parseColor("#FFFFFF"))
+val blackColor = Color(parseColor("#000000"))
+val greyColor = Color(parseColor("#888888"))
+val lightGreyColor = Color(parseColor("#F9F9F9"))

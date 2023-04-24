@@ -1,5 +1,6 @@
 package com.moejehad.reelsapp.presentation.reels
 
+import android.net.Uri
 import android.widget.FrameLayout
 import android.widget.ListPopupWindow.MATCH_PARENT
 import androidx.compose.runtime.Composable
@@ -12,7 +13,7 @@ import com.google.android.exoplayer2.ui.AspectRatioFrameLayout
 import com.google.android.exoplayer2.ui.StyledPlayerView
 
 @Composable
-fun VideoPlayer(link : String) {
+fun VideoPlayer(uri: Uri) {
 
     val context = LocalContext.current
 
@@ -20,7 +21,7 @@ fun VideoPlayer(link : String) {
         .build()
         .also { exoPlayer ->
             val mediaItem = MediaItem.Builder()
-                .setUri(link)
+                .setUri(uri)
                 .build()
             exoPlayer.setMediaItem(mediaItem)
             exoPlayer.playWhenReady = true
@@ -37,7 +38,7 @@ fun VideoPlayer(link : String) {
                 resizeMode = AspectRatioFrameLayout.RESIZE_MODE_ZOOM
                 player = exoPlayer
                 layoutParams = FrameLayout.LayoutParams(
-                    MATCH_PARENT,MATCH_PARENT
+                    MATCH_PARENT, MATCH_PARENT
                 )
             }
         })
