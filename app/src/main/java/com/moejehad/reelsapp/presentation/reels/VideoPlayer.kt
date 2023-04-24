@@ -13,7 +13,7 @@ import com.google.android.exoplayer2.ui.AspectRatioFrameLayout
 import com.google.android.exoplayer2.ui.StyledPlayerView
 
 @Composable
-fun VideoPlayer(uri: Uri) {
+fun VideoPlayer(url: String) {
 
     val context = LocalContext.current
 
@@ -21,7 +21,7 @@ fun VideoPlayer(uri: Uri) {
         .build()
         .also { exoPlayer ->
             val mediaItem = MediaItem.Builder()
-                .setUri(uri)
+                .setUri(url)
                 .build()
             exoPlayer.setMediaItem(mediaItem)
             exoPlayer.playWhenReady = true

@@ -8,7 +8,7 @@ object DummyData {
     val reels = mutableStateListOf(
         Reel(
             id = 1,
-            video = "1.mp4",
+            video = "https://moedata.000webhostapp.com/1.mp4",
             userImage = "https://generated.photos/vue-static/home/hero/4.png",
             userName = "Wafiya Hadeel",
             isLiked = true,
@@ -18,7 +18,7 @@ object DummyData {
         ),
         Reel(
             id = 2,
-            video = "2.mp4",
+            video = "https://moedata.000webhostapp.com/2.mp4",
             userImage = "https://generated.photos/vue-static/home/hero/7.png",
             userName = "Ibtisam Ban Shadid",
             isLiked = false,
@@ -28,7 +28,7 @@ object DummyData {
         ),
         Reel(
             id = 3,
-            video = "3.mp4",
+            video = "https://moedata.000webhostapp.com/3.mp4",
             userImage = "https://generated.photos/vue-static/home/hero/3.png",
             userName = "Safiya Anjum",
             isLiked = true,
@@ -38,7 +38,7 @@ object DummyData {
         ),
         Reel(
             id = 4,
-            video = "4.mp4",
+            video = "https://moedata.000webhostapp.com/4.mp4",
             userImage = "https://generated.photos/vue-static/home/hero/6.png",
             userName = "Muhammad Ali",
             isLiked = false,
@@ -48,7 +48,7 @@ object DummyData {
         ),
         Reel(
             id = 5,
-            video = "5.mp4",
+            video = "https://moedata.000webhostapp.com/5.mp4",
             userImage = "https://generated.photos/vue-static/home/hero/2.png",
             userName = "Ahmad khaled",
             isLiked = true,

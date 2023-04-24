@@ -70,7 +70,7 @@ fun ReelsList() {
                         }
                     )
                 }) {
-                VideoPlayer(uri = reels[index].getVideoUrl())
+                VideoPlayer(url = reels[index].video)
                 Column(Modifier.align(Alignment.BottomStart)) {
                     ReelsFooter(reels[index])
                     Divider()
